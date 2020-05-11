@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.he.accountbook_mall.mapper.TotalDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.he.accountbook_mall.domain.TotalEntity">
+        <id column="id" property="id" />
+        <result column="data_sum" property="dataSum" />
+        <result column="product" property="product" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, data_sum, product
+    </sql>
+
+</mapper>

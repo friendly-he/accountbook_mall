@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.he.accountbook_mall.mapper.BookDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.he.accountbook_mall.domain.BookEntity">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="time" property="time" />
+        <result column="money" property="money" />
+        <result column="wx" property="wx" />
+        <result column="Commission" property="Commission" />
+        <result column="Red_envelopes" property="redEnvelopes" />
+        <result column="cash" property="cash" />
+        <result column="delivery" property="delivery"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, time, money, wx, region,Commission, Red_envelopes, cash,delivery
+    </sql>
+
+</mapper>
